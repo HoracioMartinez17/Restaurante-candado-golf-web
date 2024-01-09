@@ -1,0 +1,11 @@
+{
+  "name": "candado-golf-web",
+  "version": "1.0.0",
+  "description": "web del restaurante del candado golf",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Horacio Martinez",
+  "license": "ISC"
+}

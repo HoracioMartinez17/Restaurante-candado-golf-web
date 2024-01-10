@@ -67,15 +67,15 @@ amazing & delicious
 Where every flavor
 tells a story
 
-aria-label = slide to previous
+aria-label = deslizar al anterior
 <ion-icon name="chevron-back"></ion-icon>
 
-aria-label = slide to next
+aria-label = deslizar al siguiente
 <ion-icon name="chevron-forward"></ion-icon>
 
-alt = booking icon
+alt = icono de reserva
 
-Book A Table
+reservar una mesa
 
 
 

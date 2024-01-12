@@ -79,7 +79,7 @@ reservar una mesa
 
 
 
-#---------- SERVICE ----------#
+#---------- SERVICIOS ----------#
 
  Descubre un festín de sabores exquisitos
 
@@ -100,7 +100,7 @@ alt = forma
 
 
 
-#---------- ABOUT ----------#
+#---------- SOBRE MI ----------#
 
 Nuestra historia
 
@@ -118,88 +118,89 @@ alt = acerca de la pancarta
 
 
 
-#---------- SPECIAL DISH ----------#
+#---------- PLATO ESPECIAL ----------#
 
-alt = special dish
+alt = plato especial
 
-alt = badge
+alt = insignia
 
-Special Dish
+Plato especial
 
-Lobster Tortellini
+Ensaladilla Rusa
 
-Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the industrys standard dummy text ever since the when an unknown printer took a galley of type.
+Según el II Campeonato Nacional de Ensaladilla Rusa, celebrado en el
+congreso San Sebastian Gastronomika Euskadi, el restaurante Candado Golf
+del chef Javier Hernández es el lugar donde se elabora la mejor
+ensaladilla rusa de España. ¿Te atreves a probarla y confirmar si realmente es la mejor?
+$11.50
+$5.50
 
-$40.00
-$20.00
-
-View All Menu
+Ver toda la carta
 
 
 
 #---------- MANU ----------#
 
-Special Selection
+Selección especial
 
-Delicious Menu
+Menú Delicioso
 
-1.
-alt = Greek Salad
-Greek Salad
+alt = Ensalada Griega
+Ensalada Griega
 
-Seasonal
+De temporada
 $25.50
-Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese.
+Tomates, pimiento verde, pepino en rodajas, cebolla, aceitunas y queso feta.
 
 2.
-alt = Lasagne
-Lasagne
+alt = Lasagna
+Lasagna
 
 $40.00
-Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices
+Vegetales, quesos, carne molida, salsa de tomate, condimentos y especias.
 
 3.
-alt = Butternut Pumpkin
-Butternut Pumpkin
+alt = Calabaza Butternut
+Calabaza Butternut
 
 $10.00
-Typesetting industry lorem Lorem Ipsum is simply dummy text of the priand.
+Industria de composición de textos lorem Lorem Ipsum es simplemente un texto ficticio.
 
 4.
 alt = Tokusen Wagyu
 Tokusen Wagyu
 
-New
+Nuevo
 $39.00
-Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.
+Vegetales, quesos, carne molida, salsa de tomate, condimentos y especias.
 
 5.
-alt = Olivas Rellenas
-Olivas Rellenas
+alt = Aceitunas Rellenas
+Aceitunas Rellenas
 
 $25.00
-Avocados with crab meat, red onion, crab salad stuffed red bell pepper and green bell pepper.
+Aguacates con carne de cangrejo, cebolla roja, ensalada de cangrejo en pimiento rojo relleno y pimiento verde.
 
 6.
-alt = Opu Fish
-Opu Fish
+alt = Pescado Opu
+Pescado Opu
 
 $49.00
-Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices
+Vegetales, quesos, carne molida, salsa de tomate, condimentos y especias.
 
-During winter daily from 7:00 pm to 9:00 pm
+Durante el invierno, todos los días de 7:00 pm a 9:00 pm
 
-View All Menu
+Ver toda la carta
 
 
 
 #---------- TESTIMONIALS ----------#
 
 ”
-I wanted to thank you for inviting me down for that amazing dinner the other night. The food was extraordinary.
+Quería agradecerte por invitarme a esa increíble cena de la otra noche. La comida fue extraordinaria.
 
-alt = Sam Jhonson
-Sam Jhonson
+alt = Sara Martinez
+Sara Martinez
 
 
 

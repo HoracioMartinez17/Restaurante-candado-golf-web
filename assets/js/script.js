@@ -11,13 +11,12 @@ window.addEventListener("load", function () {
 
 /* Añadir evento listener en múltiples elementos */
 const addEventOnElements = (elements, eventType, callback) => {
-    // Recorre todos los elementos proporcionados en el array 'elements'
-    for (let i = 0, len = elements.length; i < len; i++) {
-      // Agrega un event listener del tipo 'eventType' a cada elemento con la función 'callback'
-      elements[i].addEventListener(eventType, callback);
-    }
-  };
-  
+  // Recorre todos los elementos proporcionados en el parallaxItems 'elements'
+  for (let i = 0, len = elements.length; i < len; i++) {
+    // Agrega un event listener del tipo 'eventType' a cada elemento con la función 'callback'
+    elements[i].addEventListener(eventType, callback);
+  }
+};
 
 /* Navbar */
 const navbar = document.querySelector("[data-navbar]");
@@ -117,3 +116,33 @@ addEventOnElements([heroSliderNextBtn, heroSliderPrevBtn], "mouseover", () => {
 addEventOnElements([heroSliderNextBtn, heroSliderPrevBtn], "mouseout", autoSlide);
 
 window.addEventListener("load", autoSlide); // Iniciar auto slide cuando la página está completamente cargada
+
+// parallax effect
+
+// Seleccionar todos los elementos con el atributo 'data-parallax-item'
+const parallaxItems = document.querySelectorAll("[data-parallax-item]");
+
+let x, y;
+
+// Escuchar el evento 'mousemove' en la ventana
+window.addEventListener("mousemove", (e) => {
+  // Calcular la posición relativa del mouse en el eje X e Y
+  x = (e.clientX / window.innerWidth) * 10 - 5;
+  y = (e.clientY / window.innerHeight) * 10 - 5;
+
+  // Invertir los valores para obtener un efecto de parallax opuesto al movimiento del mouse
+  x = x - x * 2;
+  y = y - y * 2;
+
+  // Iterar sobre cada elemento con efecto de parallax
+  for (let i = 0, len = parallaxItems.length; i < len; i++) {
+    // Aplicar el efecto de parallax multiplicando la posición del mouse por la velocidad del parallax del elemento
+    x = x * Number(parallaxItems[i].dataset.parallaxSpeed);
+    y = y * Number(parallaxItems[i].dataset.parallaxSpeed);
+
+    // Aplicar la transformación en 3D para el efecto de parallax
+    parallaxItems[i].style.transform = `translate3d(${x}px, ${y}px, 0px)`;
+  }
+});
+
+

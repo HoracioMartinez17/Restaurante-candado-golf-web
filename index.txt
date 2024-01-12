@@ -81,40 +81,40 @@ reservar una mesa
 
 #---------- SERVICE ----------#
 
-Flavors For Royalty
+ Descubre un festín de sabores exquisitos
 
-We Offer Top Notch
+Arroces y pescados extraordinarios
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industrys standard dummy text ever.
+Sumérgete en una experiencia culinaria única. Nuestros arroces,cuidadosamente elaborados, y nuestros frescos pescados te transportarán a un mundo de delicias gastronómicas.
 
-alt = Breakfast
+alt = Almuerzo 
 
-Breakfast
-View Menu
+Almuerzo 
+Ver carta
 
-Appetizers
+Aperitivos
 
-Drinks
+Bebidas
 
-alt = shape
+alt = forma
 
 
 
 #---------- ABOUT ----------#
 
-Our Story
+Nuestra historia
 
-Every Fla vor Tells a Story
+Cada sabor cuenta una historia
 
-Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the industrys standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book It has survived not only five centuries, but also the leap into.
+Restaurante Candado Golf, es el proyecto personal del chef Javier Hernández, se encuentra ubicado en el malagueño club de golf que le da nombre. Un entorno privilegiado en el que Javier sirve una cocina tradicional malagueña con producto de mercado especializada en arroces. Entre sus platos más demandados, se encuentra su ensaladilla rusa, reconocida con el Premio a la Mejor Ensaladilla Rusa de España en el año 2019.
 
-Book Through Call
+Reserva por teléfono.
 
-+80 (400) 123 4567
+952 299 341
 
-Read More
+Leer más
 
-alt = about banner
+alt = acerca de la pancarta
 
 
 

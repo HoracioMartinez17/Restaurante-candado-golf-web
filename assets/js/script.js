@@ -1,29 +1,31 @@
 "use strict";
 
-/*preload*/
-
+/* Preload */
 const preloader = document.querySelector("[data-preaload]");
 
 window.addEventListener("load", function () {
-  preloader.classList.add("loaded");
-  document.body.classList.add("loaded");
+  // Cuando la página está completamente cargada
+  preloader.classList.add("loaded"); // Marcar el preloader como cargado
+  document.body.classList.add("loaded"); // Marcar el cuerpo del documento como cargado
 });
 
-// añadir evento listenner en multiples elementos
-
+/* Añadir evento listener en múltiples elementos */
 const addEventOnElements = (elements, eventType, callback) => {
-  for (let i = 0, len = elements.length; i < len; i++) {
-    elements[i].addEventListener(eventType, callback);
-  }
-};
+    // Recorre todos los elementos proporcionados en el array 'elements'
+    for (let i = 0, len = elements.length; i < len; i++) {
+      // Agrega un event listener del tipo 'eventType' a cada elemento con la función 'callback'
+      elements[i].addEventListener(eventType, callback);
+    }
+  };
+  
 
-// navbar
-
+/* Navbar */
 const navbar = document.querySelector("[data-navbar]");
 const navTogglers = document.querySelectorAll("[data-nav-toggler]");
 const overlay = document.querySelector("[data-overlay]");
 
 const togglersNavbar = () => {
+  // Alternar clases para mostrar/ocultar la barra de navegación
   navbar.classList.toggle("active");
   overlay.classList.toggle("active");
   document.body.classList.toggle("nav-active");
@@ -31,15 +33,15 @@ const togglersNavbar = () => {
 
 addEventOnElements(navTogglers, "click", togglersNavbar);
 
-// header
-
+/* Header */
 const header = document.querySelector("[data-header]");
 
 let lastScrollPos = 0;
 
 const hideHeader = () => {
-  const isCrollBottom = lastScrollPos < window.scrollY;
-  if (isCrollBottom) {
+  // Ocultar o mostrar el encabezado al hacer scroll hacia abajo o arriba
+  const isScrollBottom = lastScrollPos < window.scrollY;
+  if (isScrollBottom) {
     header.classList.add("hide");
   } else {
     header.classList.remove("hide");
@@ -48,6 +50,7 @@ const hideHeader = () => {
 };
 
 window.addEventListener("scroll", () => {
+  // Mostrar el encabezado como activo después de hacer scroll
   if (window.scrollY >= 50) {
     header.classList.add("active");
     hideHeader();
@@ -56,23 +59,24 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// hero slider
-
+/* Hero Slider */
 const heroSlider = document.querySelector("[data-hero-slider]");
 const heroSliderItems = document.querySelectorAll("[data-hero-slider-item]");
 const heroSliderPrevBtn = document.querySelector("[data-prev-btn]");
-const heroSliderNextvBtn = document.querySelector("[data-next-btn]");
+const heroSliderNextBtn = document.querySelector("[data-next-btn]");
 
 let currentSlidePos = 0;
 let lastActiveSliderItem = heroSliderItems[0];
 
 const updateSliderPosition = () => {
+  // Actualizar la posición del slider y marcar el slider activo
   lastActiveSliderItem.classList.remove("active");
   heroSliderItems[currentSlidePos].classList.add("active");
   lastActiveSliderItem = heroSliderItems[currentSlidePos];
 };
 
 const slideNext = () => {
+  // Mover al siguiente slide
   if (currentSlidePos >= heroSliderItems.length - 1) {
     currentSlidePos = 0;
   } else {
@@ -81,9 +85,10 @@ const slideNext = () => {
   updateSliderPosition();
 };
 
-heroSliderNextvBtn.addEventListener("click", slideNext);
+heroSliderNextBtn.addEventListener("click", slideNext);
 
 const slidePrev = () => {
+  // Mover al slide anterior
   if (currentSlidePos <= 0) {
     currentSlidePos = heroSliderItems.length - 1;
   } else {
@@ -91,21 +96,24 @@ const slidePrev = () => {
   }
   updateSliderPosition();
 };
+
 heroSliderPrevBtn.addEventListener("click", slidePrev);
 
-// auto slide
-
+/* Auto Slide */
 let autoSlideInterval;
 
 const autoSlide = () => {
+  // Iniciar el auto slide con un intervalo de tiempo
   autoSlideInterval = setInterval(() => {
     slideNext();
   }, 8000);
 };
 
-addEventOnElements([heroSliderNextvBtn, heroSliderPrevBtn], "mouseover", () => {
+addEventOnElements([heroSliderNextBtn, heroSliderPrevBtn], "mouseover", () => {
+  // Detener el auto slide al pasar el ratón sobre los botones del slider
   clearInterval(autoSlideInterval);
 });
-addEventOnElements([heroSliderNextvBtn, heroSliderPrevBtn], "mouseout", autoSlide);
 
-window.addEventListener("load", autoSlide);
+addEventOnElements([heroSliderNextBtn, heroSliderPrevBtn], "mouseout", autoSlide);
+
+window.addEventListener("load", autoSlide); // Iniciar auto slide cuando la página está completamente cargada

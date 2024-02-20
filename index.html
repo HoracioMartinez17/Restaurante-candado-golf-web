@@ -37,12 +37,7 @@
 
     <div class="preload" data-preaload>
       <div class="circle"></div>
-      <div class="preload__text-div">
-        <p class="text">Restaurante</p>
-      </div>
-      <div class="preload__text-div">
-        <p class="text">Candado Golf</p>
-      </div>
+        <p class="text">R.C Golf</p>
     </div>
 
     <!-- TOPBAR -->
@@ -54,25 +49,26 @@
           </div>
           <span class="span">C. Golf del Candado, sn 29016, Málaga</span>
         </address>
+        <div class="separator"></div>
         <div class="topbar-item item-2">
-          <div class="separator"></div>
           <div class="icon">
             <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-            <span class="span">Abierto: 9:00 am a 12:00 pm</span>
           </div>
-          <a href="tel:952299341" class="topbar-item">
+          <span class="span">Abierto: 9:00 am a 12:00 pm</span>
+        </div>
+          <a href="tel:952299341" class="topbar-item link">
             <div class="icon">
               <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
             </div>
             <span class="span">952 299 341 </span>
           </a>
-          <a href="mailto:reservas@elrestaurantedelcandadogolf.es " class="topbar-item">
+          <a href="mailto:reservas@elrestaurantedelcandadogolf.es " class="topbar-item link">
             <div class="icon">
               <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
             </div>
             <span class="span">reservas@elrestaurantedelcandadogolf.es </span>
           </a>
-        </div>
+        
       </div>
     </div>
     <!-- Header -->
@@ -80,7 +76,7 @@
       <div class="container">
         <a href="#" class="logo">
           <img
-            src="./assets/images/logo-3.svg"
+            src="./assets/images/logo.svg"
             alt="Restaurante - Home"
             width="160"
             height="50"
@@ -106,7 +102,7 @@
               </a>
             </li>
             <li class="navbar-item">
-              <a href="#ElRestaurante" class="navbar-link hover-underline">
+              <a href="#Restaurante" class="navbar-link hover-underline">
                 <div class="separator"></div>
                 <span class="span">El Restaurante</span>
               </a>
@@ -118,21 +114,15 @@
               </a>
             </li>
             <li class="navbar-item">
-              <a href="#Cocinando-Italia" class="navbar-link hover-underline">
+              <a href="#Eventos" class="navbar-link hover-underline">
                 <div class="separator"></div>
-                <span class="span">Cocinando Italia</span>
+                <span class="span">Eventos</span>
               </a>
             </li>
             <li class="navbar-item">
               <a href="#Catering" class="navbar-link hover-underline">
                 <div class="separator"></div>
                 <span class="span">Catering</span>
-              </a>
-            </li>
-            <li class="navbar-item">
-              <a href="#Catering" class="navbar-link hover-underline">
-                <div class="separator"></div>
-                <span class="span">Reservas</span>
               </a>
             </li>
             <li class="navbar-item">
@@ -168,6 +158,11 @@
             >
           </div>
         </nav>
+        <a href="#Contacto" class="btn btn-secondary">
+          <span class="text text-1">Reservar una mesa</span>
+  
+          <span class="text text-2" aria-hidden="true">Reservar una mesa</span>
+        </a>
         <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
           <span class="line line-1"></span>
           <span class="line line-2"></span>
@@ -266,7 +261,7 @@
           >
             <ion-icon name="chevron-forward"></ion-icon>
           </button>
-          <a href="#" class="hero-btn has-after">
+          <a href="#Contacto" class="hero-btn has-after">
             <img
               src="./assets/images/hero-icon.png"
               alt="icono de reserva"
@@ -278,7 +273,7 @@
         </section>
         <!-- servicios section -->
         <section class="section service bg-black-10 text-center" aria-label="service">
-          <div class="container">
+          <div class="container" id="Carta">
             <p class="section-subtitle label-2">
               Descubre un festín de sabores exquisitos
             </p>
@@ -375,9 +370,9 @@
         <section
           class="section about text-center"
           aria-labelledby="about-label"
-          id="about"
+          
         >
-          <div class="container">
+          <div class="container" id="Restaurante">
             <div class="about-content">
               <p class="label-2 section-subtitle" id="about-label">Nuestra Historia</p>
               <h2 class="headline-1 section-title">Cada sabor cuenta una historia</h2>
@@ -401,7 +396,7 @@
             </div>
             <figure class="about-banner">
               <img
-                src="./assets/images/about-banner.jpg"
+                src="./assets/images/imagen-restaurante-candado.jpg"
                 alt="acerca de la pancarta"
                 class="w-100"
                 width="570"
@@ -416,7 +411,7 @@
                 data-parallax-speed="1.75"
               >
                 <img
-                  src="./assets/images/about-abs-image.jpg"
+                  src="./assets/images/CocineroCandadoGolf.jpg"
                   alt="acerca de la pancarta"
                   class="w-100"
                   width="285"
@@ -448,7 +443,7 @@
         <section class="special-dish text-center" aria-labelledby="cena-label">
           <div class="special-dish-banner">
             <img
-              src="./assets/images/ensaladilla rusa.webp"
+              src="./assets/images/ensaladilla rusa-1.jpg"
               alt="plato especial"
               class="img-cover"
               width="940"
@@ -512,7 +507,7 @@
                 <div class="menu-card hover:card">
                   <figure
                     class="card-banner img-holder"
-                    style="--widht: 100; --height: 100"
+                    style="--widht: 100; --height: 100;"
                   >
                     <img
                       src="./assets/images/menu-1.png"
@@ -542,7 +537,7 @@
                 <div class="menu-card hover:card">
                   <figure
                     class="card-banner img-holder"
-                    style="--widht: 100; --height: 100"
+                    style="--widht: 100; --height: 100;"
                   >
                     <img
                       src="./assets/images/menu-2.png"
@@ -630,7 +625,7 @@
                 <div class="menu-card hover:card">
                   <figure
                     class="card-banner img-holder"
-                    style="--widht: 100; --height: 100"
+                    style="--widht: 100; --height: 100;"
                   >
                     <img
                       src="./assets/images/menu-5.png"
@@ -673,10 +668,10 @@
                   <div>
                     <div class="title-wrapper">
                       <h3 class="title-3">
-                        <a href="#" class="card-title">Calabaza Butternut</a>
+                        <a href="#" class="card-title">Calabaza</a>
                       </h3>
                       <span class="badge label-1">De temporada</span>
-                      <span class="span title-2">$25.50</span>
+                      <span class="span title-2">$5.50</span>
                     </div>
                     <p class="card-text label-1">
                       Vegetales, quesos, carne molida, salsa de tomate, condimentos y
@@ -687,8 +682,8 @@
               </li>
             </ul>
             <p class="menu-text text-center">
-              Durante el invierno, todos los días de<span class="span">7:00 pm</span> a
-              <span class="span">9:00 am</span>
+              Durante el invierno, todos los días de <span class="span">9:00 am</span> a
+              <span class="span">19:00 am</span>
             </p>
             <a href="" class="btn btn-primary">
               <span class="text text-1">Ver toda la carta</span>
@@ -741,8 +736,357 @@
             </div>
           </div>
         </section>
+
+        <!-- reservation -->
+
+        <section class="reservation">
+          <div class="container" id="Contacto">
+            <div class="form reservation-form bg-black-10">
+              <form action="#" class="form-left">
+                <h2 class="headline-1 text-center">Reservacion online</h2>
+                <p class="form-text text-center">
+                  Numero para Reservas<a href="tel:952299341" class="link">
+                    952 299 341</a
+                  >
+                  o rellene el formulario.
+                </p>
+                <div class="input-wrapper">
+                  <input
+                    type="text"
+                    name="nombre"
+                    placeholder="Su nombre"
+                    autocomplete="off"
+                    class="input-field"
+                  />
+                  <input
+                    type="tel"
+                    name="telefono"
+                    placeholder="Numero de telefono"
+                    autocomplete="off"
+                    class="input-field"
+                  />
+                </div>
+                <div class="input-wrapper">
+                  <div class="icon-wrapper">
+                    <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                    <select name="persona" class="input-field">
+                      <option value="1-persona">1-persona</option>
+                      <option value="2-personas">2-personas</option>
+                      <option value="3-personas">3-personas</option>
+                      <option value="4-personas">4-personas</option>
+                      <option value="5-personas">5-personas</option>
+                      <option value="6-personas">6-personas</option>
+                      <option value="7-personas">7-personas</option>
+                    </select>
+                    <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                  </div>
+                  <div class="icon-wrapper">
+                    <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+                    <input type="date" name="datos-resrvacion" class="input-field" />
+                    <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                  </div>
+                  <div class="icon-wrapper">
+                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                    <select name="persona" class="input-field">
+                      <option value="12:30pm">12:30pm</option>
+                      <option value="13:00pm">13:00pm</option>
+                      <option value="13:30pm">13:30pm</option>
+                      <option value="14:00pm">14:00pm</option>
+                      <option value="14:30pm">14:30pm</option>
+                      <option value="15:00pm">15:00pm</option>
+                      <option value="15:30pm">15:30pm</option>
+                      <option value="16:00pm">16:00pm</option>
+                    </select>
+                    <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                  </div>
+                </div>
+                <textarea
+                  name="mensaje"
+                  placeholder="Mensaje"
+                  autocomplete="off"
+                  class="input-field"
+                >
+                </textarea>
+                <button class="btn btn-secondary">
+                  <span class="text text-1">Reservar una mesa</span>
+                  <span class="text text-2" aria-hidden="true">Reservar una mesa</span>
+                </button>
+              </form>
+              <div
+                class="form-right text-center"
+                style="background-image: url('./assets/images/form-pattern.png')"
+              >
+                <h2 class="headline-1 text-center">Contáctanos</h2>
+                <p class="contact-label">Numero para Reservas</p>
+                <a href="tel:952299341" class="body-1 contact-number hover-underline"
+                  >952 299 341</a
+                >
+                <div class="separator"></div>
+                <p class="contact-label">Ubicación</p>
+                <address class="body-4">
+                  C. Golf del Candado, sn <br />
+                  29016, Málaga
+                </address>
+                <p class="contact-label">Horario de Almuerzo</p>
+                <p class="body-4">
+                  Miercoles a Domingo <br />
+                  11:00 am - 16:30 pm
+                </p>
+                <p class="contact-label">Horario de Cena</p>
+                <p class="body-4">Martes a Domingo <br />19:00 pm - 00:00 am</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CARACTERÍSTICAS -->
+
+        <section class="section features text-center" aria-label="features">
+          <div class="container">
+            <p class="section-subtitle label-2">¿Por qué elegirnos?</p>
+            <h2 class="headline-1 section-title">Nuestras Fortalezas</h2>
+            <ul class="grid-list">
+              <li class="feature-item">
+                <div class="feature-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/features-icon-1.png"
+                      alt="icono"
+                      height="80"
+                      width="100"
+                      loading="lazy"
+                    />
+                  </div>
+                  <h3 class="title-2 card-title">Comida Higiénica</h3>
+                  <p class="label-1 card-text">
+                    Comprometidos con la excelencia en higiene y calidad de alimentos.
+                  </p>
+                </div>
+              </li>
+              <li class="feature-item">
+                <div class="feature-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/features-icon-2.png"
+                      alt="icono"
+                      height="80"
+                      width="100"
+                      loading="lazy"
+                    />
+                  </div>
+                  <h3 class="title-2 card-title">Vistas Espectaculares</h3>
+                  <p class="label-1 card-text">
+                    Disfruta de vistas impresionantes mientras saboreas nuestros
+                    deliciosos platillos.
+                  </p>
+                </div>
+              </li>
+              <li class="feature-item">
+                <div class="feature-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/features-icon-3.png"
+                      alt="icono"
+                      height="80"
+                      width="100"
+                      loading="lazy"
+                    />
+                  </div>
+                  <h3 class="title-2 card-title">Chefs Expertos</h3>
+                  <p class="label-1 card-text">
+                    Contamos con chefs altamente capacitados y creativos.
+                  </p>
+                </div>
+              </li>
+              <li class="feature-item">
+                <div class="feature-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/features-icon-4.png"
+                      alt="icono"
+                      height="80"
+                      width="100"
+                      loading="lazy"
+                    />
+                  </div>
+                  <h3 class="title-2 card-title">Eventos y Fiestas</h3>
+                  <p class="label-1 card-text">
+                    Hacemos de tus eventos y fiestas experiencias inolvidables.
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <img
+              src="./assets/images/shape-7.png"
+              alt="forma"
+              width="208"
+              height="178"
+              loading="lazy"
+              class="shape shape-1"
+            />
+            <img
+              src="./assets/images/shape-8.png"
+              alt="forma"
+              width="120"
+              height="115"
+              loading="lazy"
+              class="shape shape-2"
+            />
+          </div>
+        </section>
+
+        <!-- EVENTOS -->
+
+        <section class="section event bg-black-10" aria-label="eventos">
+          <div class="container" id="Eventos">
+            <p class="section-subtitle label-2 text-center">Últimas Actualizaciones</p>
+            <h2 class="section-title headline-1 text-center">Próximos Eventos</h2>
+            <ul class="grid-list">
+              <li>
+                <div
+                  class="event-card has-before hover:shine"
+                  style="--width: 350; height: 450"
+                >
+                  <div  class="card-banner img-holder" style="--width: 350; --height: 450;">
+                    <img
+                      src="./assets/images/event-1.jpg"
+                      alt="Sumérgete en la auténtica cocina italiana con nuestro evento especial."
+                      loading="lazy"
+                      width="350"
+                      height="450"
+                      class="img-cover"
+                    />
+                    <time class="publish-date label-2" datetime="15/09/2024"
+                      >15/09/2024</time
+                    >
+                  </div>
+                  <div class="card-content">
+                    <p class="card-subtitle label-2 text-center">Cocinando italia</p>
+                    <h3 class="card-title title-2 text-center">
+                      Sumérgete en la auténtica cocina italiana con nuestro evento
+                      especial.
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="event-card has-before hover:shine"
+                  style="--width: 350; height: 450"
+                >
+                  <div  class="card-banner img-holder" style="--width: 350; --height: 450;">
+                    <img
+                      src="./assets/images/event-2.jpg"
+                      alt="Descubre opciones deliciosas y saludables en nuestro próximo evento."
+                      loading="lazy"
+                      width="350"
+                      height="450"
+                      class="img-cover"
+                    />
+                    <time class="publish-date label-2" datetime="15/09/2024"
+                      >11/05/2024</time
+                    >
+                  </div>
+                  <div class="card-content">
+                    <p class="card-subtitle label-2 text-center">Comida Saludable</p>
+                    <h3 class="card-title title-2 text-center">
+                      Descubre opciones deliciosas y saludables en nuestro próximo evento.
+                    </h3>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
       </article>
     </main>
+
+    <!-- FOOTER -->
+
+    <footer
+      class="footer section has-bg-image text-center"
+      style="background-image: url('./assets/images/footer-bg.jpg')"
+    >
+      <div class="container">
+        <div class="footer-top grid-list">
+          <div class="footer-brand">
+            <a href="#" class="logo"
+              ><img
+                src="./assets/images/logo.svg"
+                alt="logo-candado-golf"
+                loading="lazy"
+                width="160"
+                height="50"
+            /></a>
+            <address class="body-4">C. Golf del Candado, sn 29016, Málaga</address>
+            <a
+              href="mailto:reservas@elrestaurantedelcandadogolf.es"
+              class="body-4 contact-link"
+              >reservas@elrestaurantedelcandadogolf.es</a
+            >
+            <a href="tel:952299341" class="body-4 contact-link"
+              >Numero para Reservas: 952 299 341</a
+            >
+            <p class="body-4">Abierto : 09:00 am - 01:00 pm</p>
+            <div class="wrapper">
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+            </div>
+            <p class="title-1">Recibe noticias y ofertas!</p>
+            <p class="label-1">
+              Suscríbete y obtén un <span class="span">25 % de descuento.</span>
+            </p>
+            <form action="#" class="input-wrapper">
+              <div class="icon-wrapper">
+                <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                <input
+                  type="email"
+                  name="email_direccion"
+                  placeholder="Tu email"
+                  class="input-field"
+                  autocomplete="off"
+                />
+              </div>
+              <button type="submit" class="btn btn-secondary">
+                <span class="text text-1">Subscribete</span>
+                <span class="text text-2" aria-hidden="true">Subscribete</span>
+              </button>
+            </form>
+          </div>
+          <ul class="footer-list">
+            <li><a href="#" class="label-2 footer-link hover-underline">Inicion</a></li>
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline">EL RESTAURANTE</a>
+            </li>
+            <li><a href="#" class="label-2 footer-link hover-underline">CARTA</a></li>
+            <li><a href="#" class="label-2 footer-link hover-underline">EVENTOS</a></li>
+            <li><a href="#" class="label-2 footer-link hover-underline">RESERVAS</a></li>
+            <li><a href="#" class="label-2 footer-link hover-underline">CATERING</a></li>
+            <li><a href="#" class="label-2 footer-link hover-underline">REGALA</a></li>
+            <li><a href="#" class="label-2 footer-link hover-underline">CONTACTO</a></li>
+          </ul>
+          <ul class="footer-list">
+            <li><a href="#" class="label-2 footer-link hover-underline">Facebook</a></li>
+            <li><a href="#" class="label-2 footer-link hover-underline">Instagram</a></li>
+            <li><a href="#" class="label-2 footer-link hover-underline">Ubicación</a></li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <p class="copyright">
+            &copy; 2024 Restaurante candado golf. Todos los derechos reservados |
+            Elaborado por <a href="https://github.com/HoracioMartinez17" class="link" target="_blank">Horacio Martinez</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- VOLVER ARRIBA BOTÓN -->
+<a href="#" class="back-top-btn active" ARIA-LABEL="boton de volver arriba" data-back-top-btn>
+  <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+</a>
+
     <!-- custom js links -->
     <script defer src="./assets/js/script.js"></script>
 

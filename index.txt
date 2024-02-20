@@ -28,19 +28,19 @@ About Us
 Our Chefs
 Contact
 
-Visit Us
+Visitanos
 
-Restaurant St, Delicious City,
-London 9578, UK
+C. Golf del Candado,
+sn 29016, Málaga
 
-Open: 9.30 am - 2.30pm
+Abierto: 9:30 am a 12:00 pm
 
-booking@grilli.com
+reservas@elrestaurantedelcandadogolf.es
 
-Booking Request
-+88-123-123456
+Solicitud de reserva
+952 299 341
 
-Find A Table
+Encontrar una mesa
 
 aria-label = open menu
 
@@ -48,7 +48,7 @@ aria-label = open menu
 
 #---------- HERO ----------#
 
-Tradational & Hygine
+Tradicional & Hygine
 
 For the love of
 delicious food
@@ -139,7 +139,7 @@ Ver toda la carta
 
 
 
-#---------- MANU ----------#
+#---------- MENU ----------#
 
 Selección especial
 
@@ -194,7 +194,7 @@ Ver toda la carta
 
 
 
-#---------- TESTIMONIALS ----------#
+#---------- TESTIMONIOS ----------#
 
 ”
 Quería agradecerte por invitarme a esa increíble cena de la otra noche. La comida fue extraordinaria.
@@ -204,26 +204,26 @@ Sara Martinez
 
 
 
-#---------- RESERVATION ----------#
+#---------- RESERVACION ----------#
 
-Online Reservation
+Reservacion online
 
-Booking request
-+88-123-123456
-or fill out the order form
+Solicitud de reserva
+952 299 341
+o rellene el formulario.
 
-placeholder = Your Name
-placeholder = Phone Number
+placeholder = Su nombre
+placeholder = Numero de telefono
 
 <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
 
-1 Person
-2 Person
-3 Person
-4 Person
-5 Person
-6 Person
-7 Person
+1 Persona
+2 Persona
+3 Persona
+4 Persona
+5 Persona
+6 Persona
+7 Persona
 
 <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
 
@@ -233,71 +233,76 @@ placeholder = Phone Number
 08 : 00 am
 <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
 
-placeholder = Message
+placeholder = Mensaje
 
-Book A Table
+Reservar una mesa
 
-Contact Us
+Contáctanos
 
-Booking Request
+Solicitud de Reserva
 
-+88-123-123456
+952 299 341
 
-Location
+Ubicación
 
-Restaurant St, Delicious City,
-London 9578, UK
+C. Golf del Candado, sn
+29016, Málaga
 
-Lunch Time
+Horario de Almuerzo
 
-Monday to Sunday
-11.00 am - 2.30pm
+Lunes a Domingo
+11:00 am - 2:30 pm
 
-Dinner Time
+Horario de Cena
 
-Monday to Sunday
-05.00 pm - 10.00pm
-
-
-
-#---------- FEATURES ----------#
-
-Why Choose Us
-
-Our Strength
-
-alt = icon
-
-Hygienic Food
-Lorem Ipsum is simply dummy printing and typesetting.
-
-Fresh Environment
-
-Skilled Chefs
-
-Event & Party
+Lunes a Domingo
+05:00 pm - 10:00 pm
 
 
 
-#---------- EVENT ----------#
+#---------- CARACTERÍSTICAS ----------#
 
-Recent Updates
+¿Por qué elegirnos?
 
-Upcoming Event
+Nuestras Fortalezas
 
-alt = Flavour so good you’ll try to eat with your eyes.
+alt = ícono
 
-15/09/2022
-Food, Flavour
-Flavour so good you’ll try to eat with your eyes.
+Comida Higiénica
+Comprometidos con la excelencia en higiene y calidad de alimentos.
+
+Vistas Espectaculares
+Disfruta de vistas impresionantes mientras saboreas nuestros deliciosos platillos.
+
+Chefs Expertos
+Contamos con chefs altamente capacitados y creativos.
+
+Eventos y Fiestas
+Hacemos de tus eventos y fiestas experiencias inolvidables.
+
+
+
+#---------- EVENTOS ----------#
+
+Últimas Actualizaciones
+
+Próximo Evento
+
+alt = Sabor tan bueno que intentarás comer con los ojos.
+
+15/09/2024
+Cocinado Italia
+Sumérgete en la auténtica cocina italiana con nuestro evento especial.
 
 08/09/2022
-Healthy Food
+Comida Saludable
+Descubre opciones deliciosas y saludables en nuestro próximo evento.
 
 03/09/2022
-Recipie
+Receta
+Explora nuevas recetas emocionantes en nuestro evento gastronómico.
 
-View Our Blog
+Ver Nuestro Blog
 
 
 
@@ -305,29 +310,32 @@ View Our Blog
 
 alt = grilli home
 
-Restaurant St, Delicious City, London 9578, UK
+C. Golf del Candado, sn 29016, Málaga
 
-booking@grilli.com
+reservas@elrestaurantedelcandadogolf.es
 
-Booking Request : +88-123-123456
+Numero para Reservas: 952 299 341
 
-Open : 09:00 am - 01:00 pm
+Abierto : 09:00 am - 01:00 pm
 
-Get News & Offers
+Recibe noticias y ofertas
 
-Subscribe us & Get 25% Off.
+Suscríbete y obtén un 25 % de descuento.
 
 <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
 
-placeholder = Your email
+placeholder = Tu email
 
-Subscribe
+Subscribete
 
-Home
-Menus
-About Us
-Our Chefs
-Contact
+INICIO
+EL RESTAURANTE
+CARTA
+EVENTOS
+CATERING
+RESERVAS
+REGALA
+CONTACTO
 
 Facebook
 Instagram
@@ -335,17 +343,17 @@ Twitter
 Youtube
 Google Map
 
-&copy; 2022 Grilli. All Rights Reserved | Crafted by
+&copy; 2024 Restaurante candado golf. Reservados todos los derechos | Elaborado por
 
-https://github.com/codewithsadee
+https://github.com/HoracioMartinez17
 
-codewithsadee
+Horacio Martinez
 
 
 
-#---------- BACK TO TOP ----------#
+#---------- VOLVER ARRIBA BOTÓN ----------#
 
-aria-label = back to top
+aria-label = VOLVER ARRIBA BOTÓN
 
 <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
 

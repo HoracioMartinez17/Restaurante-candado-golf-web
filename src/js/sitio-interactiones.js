@@ -10,7 +10,7 @@ window.addEventListener("load", function () {
 });
 
 /* Añadir evento listener en múltiples elementos */
-const addEventOnElements = (elements, eventType, callback) => {
+ const addEventOnElements = (elements, eventType, callback) => {
   // Recorre todos los elementos proporcionados en el parallaxItems 'elements'
   for (let i = 0, len = elements.length; i < len; i++) {
     // Agrega un event listener del tipo 'eventType' a cada elemento con la función 'callback'
@@ -23,14 +23,36 @@ const navbar = document.querySelector("[data-navbar]");
 const navTogglers = document.querySelectorAll("[data-nav-toggler]");
 const overlay = document.querySelector("[data-overlay]");
 
-const togglersNavbar = () => {
+document.addEventListener('DOMContentLoaded', function() {
+    var navbarLinks = document.querySelectorAll('.navbar-link');
+
+    navbarLinks.forEach(function(link) {
+      link.addEventListener('click', function() {
+        // Elimina la clase 'active' de todos los enlaces
+        navbarLinks.forEach(function(link) {
+          link.classList.remove('active');
+        });
+
+        // Agrega la clase 'active' al enlace clicado
+        link.classList.add('active');
+
+        // Cierra el sidebar al hacer clic en un enlace
+        navbar.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.classList.remove('nav-active');
+      });
+    });
+  });
+
+  
+const toggleNavbar = () => {
   // Alternar clases para mostrar/ocultar la barra de navegación
   navbar.classList.toggle("active");
   overlay.classList.toggle("active");
   document.body.classList.toggle("nav-active");
 };
 
-addEventOnElements(navTogglers, "click", togglersNavbar);
+addEventOnElements(navTogglers, "click", toggleNavbar);
 
 /* Header & back-top-btn */
 const header = document.querySelector("[data-header]");
@@ -148,3 +170,6 @@ window.addEventListener("mousemove", (e) => {
 });
 
 
+export default {
+  addEventOnElements
+}

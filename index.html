@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,19 +25,22 @@
     />
 
     <!-- custom css link -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+
+    <!-- custom js links -->
+    <script defer src="./public/bundle.js"></script>
 
     <!-- preloand imges -->
-    <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg" />
-    <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg" />
-    <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg" />
+    <link rel="preload" as="image" href="./src/images/hero-slider-1.jpg" />
+    <link rel="preload" as="image" href="./src/images/hero-slider-2.jpg" />
+    <link rel="preload" as="image" href="./src/images/hero-slider-3.jpg" />
   </head>
   <body>
     <!-- preloader -->
 
     <div class="preload" data-preaload>
       <div class="circle"></div>
-        <p class="text">R.C Golf</p>
+      <p class="text">R.C Golf</p>
     </div>
 
     <!-- TOPBAR -->
@@ -56,19 +59,21 @@
           </div>
           <span class="span">Abierto: 9:00 am a 12:00 pm</span>
         </div>
-          <a href="tel:952299341" class="topbar-item link">
-            <div class="icon">
-              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
-            </div>
-            <span class="span">952 299 341 </span>
-          </a>
-          <a href="mailto:reservas@elrestaurantedelcandadogolf.es " class="topbar-item link">
-            <div class="icon">
-              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
-            </div>
-            <span class="span">reservas@elrestaurantedelcandadogolf.es </span>
-          </a>
-        
+        <a href="tel:952299341" class="topbar-item link">
+          <div class="icon">
+            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+          </div>
+          <span class="span">952 299 341 </span>
+        </a>
+        <a
+          href="mailto:reservas@elrestaurantedelcandadogolf.es "
+          class="topbar-item link"
+        >
+          <div class="icon">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+          </div>
+          <span class="span">reservas@elrestaurantedelcandadogolf.es </span>
+        </a>
       </div>
     </div>
     <!-- Header -->
@@ -76,7 +81,7 @@
       <div class="container">
         <a href="#" class="logo">
           <img
-            src="./assets/images/logo.svg"
+            src="./src/images/logo.svg"
             alt="Restaurante - Home"
             width="160"
             height="50"
@@ -88,7 +93,7 @@
           </button>
           <a href="#" class="logo">
             <img
-              src="./assets/images/logo-3.svg"
+              src="./src/images/logo-3.svg"
               alt="Restaurante - Home"
               width="160"
               height="50"
@@ -96,7 +101,7 @@
           </a>
           <ul class="navbar-list">
             <li class="navbar-item">
-              <a href="#" class="navbar-link hover-under active">
+              <a href="#" class="navbar-link hover-underline active">
                 <div class="separator"></div>
                 <span class="span">Inicio</span>
               </a>
@@ -120,15 +125,9 @@
               </a>
             </li>
             <li class="navbar-item">
-              <a href="#Catering" class="navbar-link hover-underline">
+              <a href="#Servicios" class="navbar-link hover-underline">
                 <div class="separator"></div>
-                <span class="span">Catering</span>
-              </a>
-            </li>
-            <li class="navbar-item">
-              <a href="#Regala" class="navbar-link hover-underline">
-                <div class="separator"></div>
-                <span class="span">Regala</span>
+                <span class="span">Servicios</span>
               </a>
             </li>
             <li class="navbar-item">
@@ -158,9 +157,9 @@
             >
           </div>
         </nav>
-        <a href="#Contacto" class="btn btn-secondary">
+        <a href="#Reservas" class="btn btn-secondary">
           <span class="text text-1">Reservar una mesa</span>
-  
+
           <span class="text text-2" aria-hidden="true">Reservar una mesa</span>
         </a>
         <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
@@ -174,12 +173,12 @@
     <main>
       <article>
         <!-- hero section -->
-        <section class="hero text-center" aria-label="home" id="home">
+        <section class=" section hero text-center" aria-label="home" id="home">
           <ul class="hero-slider" data-hero-slider>
             <li class="slider-item active" data-hero-slider-item>
               <div class="slider-bg">
                 <img
-                  src="./assets/images/hero-slider-1.jpg"
+                  src="./src/images/hero-slider-1.jpg"
                   width="1880"
                   height="950"
                   alt="Slider imagen-1"
@@ -202,7 +201,7 @@
             <li class="slider-item" data-hero-slider-item>
               <div class="slider-bg">
                 <img
-                  src="./assets/images/hero-slider-3.jpg"
+                  src="./src/images/hero-slider-3.jpg"
                   width="1880"
                   height="950"
                   alt="Slider imagen-1"
@@ -228,7 +227,7 @@
             <li class="slider-item" data-hero-slider-item>
               <div class="slider-bg">
                 <img
-                  src="./assets/images/hero-slider-2.jpg"
+                  src="./src/images/hero-slider-2.jpg"
                   width="1880"
                   height="950"
                   alt="Slider imagen-1"
@@ -261,9 +260,9 @@
           >
             <ion-icon name="chevron-forward"></ion-icon>
           </button>
-          <a href="#Contacto" class="hero-btn has-after">
+          <a href="#Reservas" class="hero-btn has-after">
             <img
-              src="./assets/images/hero-icon.png"
+              src="./src/images/hero-icon.png"
               alt="icono de reserva"
               width="48"
               height="48"
@@ -272,8 +271,11 @@
           </a>
         </section>
         <!-- servicios section -->
-        <section class="section service bg-black-10 text-center" aria-label="service">
-          <div class="container" id="Carta">
+        <section
+          class="section service bg-black-10 text-center"
+          aria-label="service"
+        >
+          <div class="container" id="Servicios">
             <p class="section-subtitle label-2">
               Descubre un festín de sabores exquisitos
             </p>
@@ -283,13 +285,13 @@
               cuidadosamente elaborados, y nuestros frescos pescados te transportarán a un
               mundo de delicias gastronómicas.
             </p>
-            <ul class="grid-list">
-              <li>
+            <ul class="grid-list" id="categorias">
+              <!-- <li>
                 <div class="service-card">
                   <a href="#" class="has-before hover:shine">
                     <figure class="card-banner img-holder" style="--width: ; --height: ">
                       <img
-                        src="./assets/images/service-1.jpg"
+                        src="./src/images/service-1.jpg"
                         alt="Almuerzo"
                         width="285"
                         height="336"
@@ -299,7 +301,7 @@
                   </a>
                   <div class="card-content">
                     <h3 class="title-4 card-title">
-                      <a href="#">Almuerzo</a>
+                      <a href="#">Postres</a>
                     </h3>
                     <a href="#" class="btn-text hover-underline label-2"> Ver carta </a>
                   </div>
@@ -310,7 +312,7 @@
                   <a href="#" class="has-before hover:shine">
                     <figure class="card-banner img-holder" style="--width: ; --height: ">
                       <img
-                        src="./assets/images/service-2.jpg"
+                        src="./src/images/service-2.jpg"
                         alt="Aperitivos"
                         width="285"
                         height="336"
@@ -320,7 +322,7 @@
                   </a>
                   <div class="card-content">
                     <h3 class="title-4 card-title">
-                      <a href="#">Aperitivos</a>
+                      <a href="#">Arroces, Pescados, Carnes y mas...</a>
                     </h3>
                     <a href="#" class="btn-text hover-underline label-2"> Ver carta </a>
                   </div>
@@ -331,7 +333,7 @@
                   <a href="#" class="has-before hover:shine">
                     <figure class="card-banner img-holder" style="--width: ; --height: ">
                       <img
-                        src="./assets/images/service-3.jpg"
+                        src="./src/images/service-3.jpg"
                         alt="Bebidas"
                         width="285"
                         height="336"
@@ -346,10 +348,10 @@
                     <a href="#" class="btn-text hover-underline label-2"> Ver carta </a>
                   </div>
                 </div>
-              </li>
+              </li> -->
             </ul>
             <img
-              src="./assets/images/shape-1.png"
+              src="./src/images/shape-1.png"
               alt="forma"
               class="shape shape-1 move-anim"
               width="246"
@@ -357,7 +359,7 @@
               loading="lazy"
             />
             <img
-              src="./assets/images/shape-2.png"
+              src="./src/images/shape-2.png"
               alt="forma"
               class="shape shape-2 move-anim"
               width="343"
@@ -370,7 +372,6 @@
         <section
           class="section about text-center"
           aria-labelledby="about-label"
-          
         >
           <div class="container" id="Restaurante">
             <div class="about-content">
@@ -396,7 +397,7 @@
             </div>
             <figure class="about-banner">
               <img
-                src="./assets/images/imagen-restaurante-candado.jpg"
+                src="./src/images/imagen-restaurante-candado.jpg"
                 alt="acerca de la pancarta"
                 class="w-100"
                 width="570"
@@ -411,7 +412,7 @@
                 data-parallax-speed="1.75"
               >
                 <img
-                  src="./assets/images/CocineroCandadoGolf.jpg"
+                  src="./src/images/CocineroCandadoGolf.jpg"
                   alt="acerca de la pancarta"
                   class="w-100"
                   width="285"
@@ -421,7 +422,7 @@
               </div>
               <div class="abs-img abs-img-2 has-before">
                 <img
-                  src="./assets/images/badge-2.png"
+                  src="./src/images/badge-2.png"
                   alt="acerca de la pancarta"
                   width="133"
                   height="134"
@@ -429,7 +430,7 @@
                 />
               </div>
               <img
-                src="./assets/images/shape-3.png"
+                src="./src/images/shape-3.png"
                 alt="forma-circular"
                 class="shape"
                 width="197"
@@ -440,10 +441,13 @@
           </div>
         </section>
         <!-- plato especial section -->
-        <section class="special-dish text-center" aria-labelledby="cena-label">
+        <section
+          class=" special-dish text-center section"
+          aria-labelledby="cena-label"
+        >
           <div class="special-dish-banner">
             <img
-              src="./assets/images/ensaladilla rusa-1.jpg"
+              src="./src/images/ensaladilla rusa-1.jpg"
               alt="plato especial"
               class="img-cover"
               width="940"
@@ -454,7 +458,7 @@
           <div class="special-dish-content bg-black-10">
             <div class="container">
               <img
-                src="./assets/images/badge-1.png"
+                src="./src/images/badge-1.png"
                 alt="insignia"
                 class="abs-img"
                 width="28"
@@ -480,7 +484,7 @@
             </div>
           </div>
           <img
-            src="./assets/images/shape-4.png"
+            src="./src/images/shape-4.png"
             alt="cena"
             class="shape shape-1"
             width="179"
@@ -488,7 +492,7 @@
             loading="lazy"
           />
           <img
-            src="./assets/images/shape-9.png"
+            src="./src/images/shape-9.png"
             alt="cena"
             class="shape shape-2"
             width="351"
@@ -497,20 +501,20 @@
           />
         </section>
         <!-- menu section -->
-        <section class="section menu" aria-label="menu-label" id="menu">
-          <div class="container">
+        <section class=" menu" aria-label="menu-label" id="menusContainer">
+          <div class="container" id="Carta">
             <p class="section-subtitle text-center label-2">Selección especial</p>
             <h2 class="headline-1 section-title text-center">Menú Delicioso</h2>
 
-            <ul class="grid-list">
-              <li>
+            <ul class="grid-list" id="menu-ul">
+               <!-- <li>
                 <div class="menu-card hover:card">
                   <figure
                     class="card-banner img-holder"
-                    style="--widht: 100; --height: 100;"
+                    style="--widht: 100; --height: 100"
                   >
                     <img
-                      src="./assets/images/menu-1.png"
+                      src="./src/images/menu-1.png"
                       alt="Ensalada Griega"
                       class="img-cover"
                       widht="100"
@@ -532,172 +536,26 @@
                     </p>
                   </div>
                 </div>
-              </li>
-              <li>
-                <div class="menu-card hover:card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--widht: 100; --height: 100;"
-                  >
-                    <img
-                      src="./assets/images/menu-2.png"
-                      alt="Ensalada Griega"
-                      class="img-cover"
-                      widht="100"
-                      height="100"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <div>
-                    <div class="title-wrapper">
-                      <h3 class="title-3">
-                        <a href="#" class="card-title">Lasagna</a>
-                      </h3>
-                      <span class="badge label-1">De temporada</span>
-                      <span class="span title-2">$25.50</span>
-                    </div>
-                    <p class="card-text label-1">
-                      Vegetales, quesos, carne molida, salsa de tomate, condimentos y
-                      especias.
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="menu-card hover:card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--widht: 100; --height: 100"
-                  >
-                    <img
-                      src="./assets/images/menu-3.png"
-                      alt="Calabaza Butternut"
-                      class="img-cover"
-                      widht="100"
-                      height="100"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <div>
-                    <div class="title-wrapper">
-                      <h3 class="title-3">
-                        <a href="#" class="card-title">Calabaza Butternut</a>
-                      </h3>
-                      <span class="span title-2">$25.50</span>
-                    </div>
-                    <p class="card-text label-1">
-                      Vegetales, quesos, carne molida, salsa de tomate, condimentos y
-                      especias.
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="menu-card hover:card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--widht: 100; --height: 100"
-                  >
-                    <img
-                      src="./assets/images/menu-4.png"
-                      alt="Calabaza Butternut"
-                      class="img-cover"
-                      widht="100"
-                      height="100"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <div>
-                    <div class="title-wrapper">
-                      <h3 class="title-3">
-                        <a href="#" class="card-title">Calabaza Butternut</a>
-                      </h3>
-                      <span class="span title-2">$25.50</span>
-                    </div>
-                    <p class="card-text label-1">
-                      Vegetales, quesos, carne molida, salsa de tomate, condimentos y
-                      especias.
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="menu-card hover:card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--widht: 100; --height: 100;"
-                  >
-                    <img
-                      src="./assets/images/menu-5.png"
-                      alt="Calabaza Butternut"
-                      class="img-cover"
-                      widht="100"
-                      height="100"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <div>
-                    <div class="title-wrapper">
-                      <h3 class="title-3">
-                        <a href="#" class="card-title">Calabaza Butternut</a>
-                      </h3>
-                      <span class="span title-2">$25.50</span>
-                    </div>
-                    <p class="card-text label-1">
-                      Vegetales, quesos, carne molida, salsa de tomate, condimentos y
-                      especias.
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="menu-card hover:card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--widht: 100; --height: 100"
-                  >
-                    <img
-                      src="./assets/images/menu-6.png"
-                      alt="Calabaza Butternut"
-                      class="img-cover"
-                      widht="100"
-                      height="100"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <div>
-                    <div class="title-wrapper">
-                      <h3 class="title-3">
-                        <a href="#" class="card-title">Calabaza</a>
-                      </h3>
-                      <span class="badge label-1">De temporada</span>
-                      <span class="span title-2">$5.50</span>
-                    </div>
-                    <p class="card-text label-1">
-                      Vegetales, quesos, carne molida, salsa de tomate, condimentos y
-                      especias.
-                    </p>
-                  </div>
-                </div>
-              </li>
+              </li> -->
+
             </ul>
             <p class="menu-text text-center">
               Durante el invierno, todos los días de <span class="span">9:00 am</span> a
               <span class="span">19:00 am</span>
             </p>
-            <a href="" class="btn btn-primary">
-              <span class="text text-1">Ver toda la carta</span>
-              <span class="text text-2" aria-hidden="true">Ver toda la carta</span>
+            <a href="" class="btn btn-primary" id="btn-back">
+              <span class="text text-1">Volver atrás</span>
+              <span class="text text-2" aria-hidden="true">Volver atrás</span>
             </a>
             <img
-              src="./assets/images/shape-5.png"
+              src="./src/images/shape-5.png"
               alt="forma"
               class="shape shape-2 move-anim"
               width="921"
               height="1036"
               loading="lazy"
             /><img
-              src="./assets/images/shape-6.png"
+              src="./src/images/shape-6.png"
               alt="forma"
               class="shape shape-3 move-anim"
               width="343"
@@ -709,14 +567,14 @@
         <!-- testimonios section -->
         <section
           class="section testi text-center has-bg-image"
-          style="background-image: url('./assets/images/testimonial-bg.jpg')"
+          style="background-image: url('./src/images/testimonial-bg.jpg')"
           aria-label="testimonios"
         >
           <div class="container">
             <div class="quote">”</div>
             <p class="headline-2 testi-text">
               Quería agradecerte por invitarme a esa increíble cena de la otra noche. La
-              comida fue extraordinaria.
+              comida fue extraordinaria!
             </p>
             <div class="wrapper">
               <div class="separator"></div>
@@ -725,22 +583,22 @@
             </div>
             <div class="profile">
               <img
-                src="./assets/images/testi-avatar.jpg"
+                src="./src/images/testi-avatar.jpg"
                 alt="Sara Martinez"
                 class="img"
                 width="100"
                 height="100"
                 loading="lazy"
               />
-              <p class="label-2 profile-name">Sara Martinez</p>
+              <p class="label-2 profile-name">Marcos Martinez</p>
             </div>
           </div>
         </section>
 
         <!-- reservation -->
 
-        <section class="reservation">
-          <div class="container" id="Contacto">
+        <section class="reservation section">
+          <div class="container" id="Reservas">
             <div class="form reservation-form bg-black-10">
               <form action="#" class="form-left">
                 <h2 class="headline-1 text-center">Reservacion online</h2>
@@ -814,7 +672,7 @@
               </form>
               <div
                 class="form-right text-center"
-                style="background-image: url('./assets/images/form-pattern.png')"
+                style="background-image: url('./src/images/form-pattern.png')"
               >
                 <h2 class="headline-1 text-center">Contáctanos</h2>
                 <p class="contact-label">Numero para Reservas</p>
@@ -850,7 +708,7 @@
                 <div class="feature-card">
                   <div class="card-icon">
                     <img
-                      src="./assets/images/features-icon-1.png"
+                      src="./src/images/features-icon-1.png"
                       alt="icono"
                       height="80"
                       width="100"
@@ -867,7 +725,7 @@
                 <div class="feature-card">
                   <div class="card-icon">
                     <img
-                      src="./assets/images/features-icon-2.png"
+                      src="./src/images/features-icon-2.png"
                       alt="icono"
                       height="80"
                       width="100"
@@ -885,7 +743,7 @@
                 <div class="feature-card">
                   <div class="card-icon">
                     <img
-                      src="./assets/images/features-icon-3.png"
+                      src="./src/images/features-icon-3.png"
                       alt="icono"
                       height="80"
                       width="100"
@@ -902,7 +760,7 @@
                 <div class="feature-card">
                   <div class="card-icon">
                     <img
-                      src="./assets/images/features-icon-4.png"
+                      src="./src/images/features-icon-4.png"
                       alt="icono"
                       height="80"
                       width="100"
@@ -917,7 +775,7 @@
               </li>
             </ul>
             <img
-              src="./assets/images/shape-7.png"
+              src="./src/images/shape-7.png"
               alt="forma"
               width="208"
               height="178"
@@ -925,7 +783,7 @@
               class="shape shape-1"
             />
             <img
-              src="./assets/images/shape-8.png"
+              src="./src/images/shape-8.png"
               alt="forma"
               width="120"
               height="115"
@@ -947,9 +805,9 @@
                   class="event-card has-before hover:shine"
                   style="--width: 350; height: 450"
                 >
-                  <div  class="card-banner img-holder" style="--width: 350; --height: 450;">
+                  <div class="card-banner img-holder" style="--width: 350; --height: 450">
                     <img
-                      src="./assets/images/event-1.jpg"
+                      src="./src/images/event-1.jpg"
                       alt="Sumérgete en la auténtica cocina italiana con nuestro evento especial."
                       loading="lazy"
                       width="350"
@@ -974,9 +832,9 @@
                   class="event-card has-before hover:shine"
                   style="--width: 350; height: 450"
                 >
-                  <div  class="card-banner img-holder" style="--width: 350; --height: 450;">
+                  <div class="card-banner img-holder" style="--width: 350; --height: 450">
                     <img
-                      src="./assets/images/event-2.jpg"
+                      src="./src/images/event-2.jpg"
                       alt="Descubre opciones deliciosas y saludables en nuestro próximo evento."
                       loading="lazy"
                       width="350"
@@ -1005,14 +863,15 @@
 
     <footer
       class="footer section has-bg-image text-center"
-      style="background-image: url('./assets/images/footer-bg.jpg')"
+      id="Contacto"
+      style="background-image: url('./src/images/footer-bg.jpg')"
     >
       <div class="container">
         <div class="footer-top grid-list">
           <div class="footer-brand">
             <a href="#" class="logo"
               ><img
-                src="./assets/images/logo.svg"
+                src="./src/images/logo.svg"
                 alt="logo-candado-golf"
                 loading="lazy"
                 width="160"
@@ -1059,12 +918,19 @@
             <li>
               <a href="#" class="label-2 footer-link hover-underline">EL RESTAURANTE</a>
             </li>
-            <li><a href="#" class="label-2 footer-link hover-underline">CARTA</a></li>
-            <li><a href="#" class="label-2 footer-link hover-underline">EVENTOS</a></li>
-            <li><a href="#" class="label-2 footer-link hover-underline">RESERVAS</a></li>
+            <li>
+              <a href="#Carta" class="label-2 footer-link hover-underline">CARTA</a>
+            </li>
+            <li>
+              <a href="#Eventos" class="label-2 footer-link hover-underline">EVENTOS</a>
+            </li>
+            <li>
+              <a href="#Reservas" class="label-2 footer-link hover-underline">RESERVAS</a>
+            </li>
             <li><a href="#" class="label-2 footer-link hover-underline">CATERING</a></li>
-            <li><a href="#" class="label-2 footer-link hover-underline">REGALA</a></li>
-            <li><a href="#" class="label-2 footer-link hover-underline">CONTACTO</a></li>
+            <li>
+              <a href="#Contacto" class="label-2 footer-link hover-underline">CONTACTO</a>
+            </li>
           </ul>
           <ul class="footer-list">
             <li><a href="#" class="label-2 footer-link hover-underline">Facebook</a></li>
@@ -1075,20 +941,24 @@
         <div class="footer-bottom">
           <p class="copyright">
             &copy; 2024 Restaurante candado golf. Todos los derechos reservados |
-            Elaborado por <a href="https://github.com/HoracioMartinez17" class="link" target="_blank">Horacio Martinez</a>
+            Elaborado por
+            <a href="https://github.com/HoracioMartinez17" class="link" target="_blank"
+              >Horacio Martinez</a
+            >
           </p>
         </div>
       </div>
     </footer>
 
-
     <!-- VOLVER ARRIBA BOTÓN -->
-<a href="#" class="back-top-btn active" ARIA-LABEL="boton de volver arriba" data-back-top-btn>
-  <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
-</a>
-
-    <!-- custom js links -->
-    <script defer src="./assets/js/script.js"></script>
+    <a
+      href="#"
+      class="back-top-btn"
+      ARIA-LABEL="boton de volver arriba"
+      data-back-top-btn
+    >
+      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
 
     <!-- ionicons links -->
     <script

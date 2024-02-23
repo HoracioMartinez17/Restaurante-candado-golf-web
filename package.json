@@ -1,11 +1,15 @@
-{
+{"type": "module",
   "name": "candado-golf-web",
   "version": "1.0.0",
   "description": "web del restaurante del candado golf",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "rollup --watch --config"
   },
   "author": "Horacio Martinez",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "rollup": "^4.12.0"
+  }
 }

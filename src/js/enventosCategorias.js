@@ -1,20 +1,11 @@
-import dataMenu from "../datos/dataMenu";
+import { renderMenuItems } from "../js/menu/cargarMenus";
 import dataMenuFotos from "../datos/fotosMenu";
 import { abrirMenu, cerrarMenu } from "./menu/cerrarAbrirMenu";
 const btnBack = document.getElementById("btn-back");
 const contenedorCategoriasMenu = document.getElementById("categorias");
-const contenedorMenuUl = document.getElementById("menu-ul");
 const menusContainer = document.getElementById("menusContainer");
+const radioButtonsContainer = document.getElementById("radio-buttons");
 
-// Función para formatear un número como euros
-const formatToEuro = (amount) => {
-  const formatter = new Intl.NumberFormat("es-ES", {
-    style: "currency",
-    currency: "EUR",
-  });
-
-  return formatter.format(amount);
-};
 
 btnBack.addEventListener("click", (e) => {
   e.preventDefault();
@@ -23,6 +14,8 @@ btnBack.addEventListener("click", (e) => {
   }
 });
 
+
+
 contenedorCategoriasMenu.addEventListener("click", (e) => {
   e.preventDefault();
   if (e.target.closest("a")) {
@@ -30,42 +23,23 @@ contenedorCategoriasMenu.addEventListener("click", (e) => {
     menusContainer.classList.add("active");
     const menuActive = e.target.closest("li").dataset.categoria;
     const fotosMenu = dataMenuFotos.fotos[menuActive];
-    fotosMenu.forEach((menuFoto) => {
-      const menuContanerLi = document.createElement("li");
-      const precioFormateado = formatToEuro(menuFoto.precio);
-      const plantillaMenu = `
-    <li id="${menuFoto.id}">
-    <div class="menu-card hover:card">
-      <figure
-        class="card-banner img-holder"
-        style="--widht: 100; --height: 100"
-      >
-        <img
-          src="${menuFoto.imagen}"
-          alt="${menuFoto.nombre}"
-          class="img-cover"
-          widht="100"
-          height="100"
-          loading="lazy"
-        />
-      </figure>
-      <div>
-        <div class="title-wrapper">
-          <h3 class="title-3">
-            <a href="#" class="card-title">${menuFoto.nombre}</a>
-          </h3>
-          <span class="span title-2">${precioFormateado}</span>
-        </div>
-        <p class="card-text label-1">
-          ${menuFoto.ingredientes}
-        </p>
-      </div>
-    </div>
-  </li>
-    `;
-      menuContanerLi.innerHTML = plantillaMenu;
+    menuActive === "entradas"
+      ? radioButtonsContainer.classList.remove("container-radio-buttons--active")
+      : radioButtonsContainer.classList.add("container-radio-buttons--active");
 
-      contenedorMenuUl.append(menuContanerLi);
-    });
+      window.scrollTo(0, 0);
+      renderMenuItems(fotosMenu);
   }
+});
+
+const radioButtons = document.querySelectorAll('input[name="category"]');
+
+radioButtons.forEach((radio) => {
+  radio.addEventListener("change", () => {
+    if (radio.checked) {
+      const selectedValue = radio.value;
+      const fotosMenu = dataMenuFotos.fotos[selectedValue];
+      renderMenuItems(fotosMenu);
+    }
+  });
 });

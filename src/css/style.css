@@ -193,7 +193,7 @@ body {
   font-weight: var(--weight-regular);
   line-height: var(--lineHeight-5);
   overflow: hidden;
-  height: 200vh;
+  height: 100vh;
 }
 
 body.loaded {

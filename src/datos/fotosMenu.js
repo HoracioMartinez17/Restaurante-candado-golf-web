@@ -130,7 +130,7 @@ export default {
       {
         id: 18,
         nombre: "Tarta de Queso",
-        imagen: "./src/images/postres/postre-4.webp",
+        imagen: "./src/images/postres/postre-2.webp",
         precio: 5.5,
         ingredientes:
           "Una clásica tarta de queso con una suave y cremosa textura que te hará querer repetir.",
@@ -138,7 +138,7 @@ export default {
       {
         id: 19,
         nombre: "Tarta de Chocolate",
-        imagen: "./src/images/postres/postre-3.webp",
+        imagen: "./src/images/postres/postre-5.webp",
         precio: 11.5,
         ingredientes:
           "Irresistible tarta de chocolate con capas intensas de sabor y un indulgente glaseado.",
@@ -146,7 +146,7 @@ export default {
       {
         id: 20,
         nombre: "Brownie de Chocolate",
-        imagen: "./src/images/postres/postre-2.webp",
+        imagen: "./src/images/postres/postre-3.webp",
         precio: 15.5,
         ingredientes:
           "Un clásico brownie de chocolate con nueces, esponjoso por dentro y con una crujiente capa superior.",
@@ -154,7 +154,7 @@ export default {
       {
         id: 21,
         nombre: "Milhojas",
-        imagen: "./src/images/postres/postre-5.webp",
+        imagen: "./src/images/postres/postre-4.webp",
         precio: 12.5,
         ingredientes:
           "Delicadas capas de hojaldre intercaladas con crema, una exquisita opción para los amantes de las texturas crujientes.",
@@ -194,7 +194,7 @@ export default {
           nombre: "Brandy Miguel Torres",
           imagen: "./src/images/bebidas/bebidas-5.webp",
           precio: 3.99,
-          ingredientes: "Agua mineral con gas, servida con hielo y una refrescante rodaja de limón. Una opción clásica y sofisticada para los amantes de las bebidas carbonatadas.",
+          ingredientes: "Una opción clásica y sofisticada para los amantes de brandy.",
       },
   ],
   

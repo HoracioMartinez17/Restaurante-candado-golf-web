@@ -417,6 +417,17 @@ body.nav-active {
   transition: var(--transition-1);
 }
 
+.btn-carta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.btn-carta svg {
+  height: 20px;
+  width: 20px;
+}
 .btn .text-2 {
   position: absolute;
   top: 100%;

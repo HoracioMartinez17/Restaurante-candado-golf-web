@@ -213,7 +213,7 @@ categorias.forEach((categoria) => {
         <h3 class="title-4 card-title">
           <a href="#">${categoria.nombre}</a>
         </h3>
-        <a href="#" class="btn-text hover-underline label-2"> Ver carta </a>
+        <a href="#" class="btn-text btn-carta hover-underline label-2"> <p>Ver carta</p> <svg xmlns="http://www.w3.org/2000/svg" width="328" height="328" viewBox="0 0 24 24"><path fill="#999999" d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4z"/></svg></a>
       </div>
     </div>
     `;
